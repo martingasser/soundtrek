@@ -74,7 +74,7 @@ startbutton.addEventListener('click', async () => {
     console.log("audio started")
 
     Tone.loaded().then(() => {
-        const watchID = navigator.geolocation.watchPosition(success, error, options);
+        // const watchID = navigator.geolocation.watchPosition(success, error, options);
     })    
 });
 

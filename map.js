@@ -17,8 +17,8 @@ const huberLon = 16.333409465125346;
 
 let mymap;
 
-let mylat = 48.2143106; // MY Latitude default values
-let mylon = 16.3322386; // MY Longitude default values
+let mylat = 48.187010450; // MY Latitude default values Echoraum
+let mylon = 16.329256747; // MY Latitude default values Echoraum
 
 let onUpdate;
 
@@ -38,13 +38,13 @@ mymap = L.map('issMap', {
 
 // Development CLICK
 
-// mymap.on('click', e => {
-//     mylat = e.latlng.lat;
-//     mylon = e.latlng.lng;
-//     memarker.setLatLng([mylat, mylon]);
+mymap.on('click', e => {
+    mylat = e.latlng.lat;
+    mylon = e.latlng.lng;
+    memarker.setLatLng([mylat, mylon]);
 
-//     onUpdate(mylat, mylon)
-// })
+    onUpdate(mylat, mylon)
+})
 
 
 // Openstreatmap – creates Tiles, we need contributors
@@ -74,7 +74,8 @@ const locIcon = L.icon({
 
 ////////////////////////// LEAFLET: Fixed Locations
 
-////////// Development Marker
+//////// Development Marker
+
 // for (let loc in geoLoops) {
 //     const geo = geoLoops[loc].geo
 //     L.marker(geo, { icon: locIcon }).addTo(mymap); // Leaflet – set Marker to 0,0
