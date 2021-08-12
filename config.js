@@ -2,292 +2,353 @@ import {ScaleArrayFinal} from './scale.js'
 
 const geoLoops = {
 
-    // ----------- SOUNDTREK Soundwalk -------------------------
+    // ----------- Borderwalk -------------------------
 
     // 01
-    Echoraum: {
-        geo: [48.187010450, 16.329256747],
+    Stodlschenke: {
+        geo: [47.94052498249126, 17.073410060405084],
         loops: [
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Wummer01.m4a",
-                volumeBreakpoints: {
-                    inner: 0.07,
-                    outer: 0.11,
-                    maxVolume: -1
-                }
-            },
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Brzl_Light_01.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Light_02.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Light_03.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Light_04.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Light_05.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Light_06.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Light_07.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Light_08.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Light_09.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_01.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_02.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_03.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_04.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_05.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_06.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_07.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_08.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_08.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_09.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_10.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_11.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_12.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_13.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_14.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_15.m4a", 2],
                 ],
-                pauses: [[2, 0.5], [3.1, 1], [6.2, 1], [9.4, 0.5]],
+                pauses: [[5.1, 0.5], [6.7, 1], [7.9, 1], [8.3, 0.5]],
                 offset: 0,
                 volumeBreakpoints: {
-                    inner: 0.017,
-                    outer: 0.02,
+                    inner: 0.025,
+                    outer: 0.06,
                     maxVolume: -6
-                }
+                } 
             },    
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_01.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_02.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_03.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_04.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_05.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_06.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_07.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_08.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_09.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_10.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_11.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_12.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_02.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_04.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_05.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_07.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_10.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_11.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_12.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_13.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_14.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_16.m4a", 1],
                 ],
-                pauses: [[3, 1], [4.2, 1], [2.1, 1], [7, 2], [11, 3]],
-                offset: 4,
+                pauses: [[8, 1], [13.3, 1]],
+                offset: 10.7,
                 volumeBreakpoints: {
-                    inner: 0.017,
+                    inner: 0.01,
                     outer: 0.02,
-                    maxVolume: -6
+                    maxVolume: -18
                 }
             },
         ]
     },
 
     // 2
-    Grimm01: { 
-        geo: [48.187107658, 16.327952505],
+    UrbarA_01: { 
+        geo: [47.940930718116, 17.07278682062122],
         loops: [
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/BrzzlJ_06.m4a",
-                volumeBreakpoints: {
-                    inner: 0.07,
-                    outer: 0.11,
-                    maxVolume: -1
-                }
-            },
-            {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Brzl_Light_01.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Light_02.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Light_03.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Light_04.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-D.m4a", 2],
+                    ["sounds/samples_m4a/MiraStepA_13.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_14.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_16.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_18.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_16.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_17.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_18.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_11.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_26.m4a", 1],
                 ],
-                pauses: [[5, 1], [6.2, 1], [9.4, 1]],
+                pauses: [[5.5, 1], [6, 1], [4.5, 1]],
                 offset: 0,
                 volumeBreakpoints: {
-                    inner: 0.017,
-                    outer: 0.02,
-                    maxVolume: -4
+                    inner: 0.02,
+                    outer: 0.04,
+                    maxVolume: -9
                 }
-            },    
+                
+            },   
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_08.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_09.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_10.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_11.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Brzl_Dark_12.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-GA-3.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-GA-2.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_14.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_15.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_16.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_17.m4a", 2],
+                    ["sounds/samples_m4a/BC_Flattern_27.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_51.m4a", 1],
                 ],
-                pauses: [[7, 1], [11, 1], [13, 1]],
+                pauses: [[2, 1], [3, 1], [5, 1]],
                 offset: 4,
                 volumeBreakpoints: {
-                    inner: 0.017,
+                    inner: 0.01,
                     outer: 0.02,
-                    maxVolume: -6
+                    maxVolume: -18
                 }
-            },  
+            }
         ]
     },
 
     // 3
-    Grimm02: { 
-        geo: [48.188244051, 16.327760967],
+    UrbarA_02: { 
+        geo: [47.94142552141633, 17.07205318126608],
         loops: [
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/BrzzlJ_01.m4a",
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-D.m4a", 2],
+                    ["sounds/samples_m4a/MiraStepA_16.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_18.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_32.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_33.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_20.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_21.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_22.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_23.m4a", 1],
+                ],
+                pauses: [[1, 1], [2, 1], [3, 1]],
+                offset: 4,
                 volumeBreakpoints: {
-                    inner: 0.07,
-                    outer: 0.11,
-                    maxVolume: -1
+                    inner: 0.02,
+                    outer: 0.03,
+                    maxVolume: -15
                 }
-            },
+                
+            },       
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Ischl_Wasser.m4a",
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-AH.m4a", 2],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-AHe.m4a", 2],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-GA.m4a", 2],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-GA-2.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_14.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_15.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_16.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_17.m4a", 2],
+                ],
+                pauses: [[3, 1], [3.5, 1], [4, 1]],
+                offset: 4,
                 volumeBreakpoints: {
-                    inner: 0.035,
-                    outer: 0.07,
-                    maxVolume: -6
+                    inner: 0.01,
+                    outer: 0.02,
+                    maxVolume: -15
                 }
-            },
+            }
         ]
     },
 
     // 4
-    Braunhirschenpark: { 
-        // geo: [48.188595787, 16.325956794],
-        geo: [48.188699414703365, 16.326575869602138],
+    Flurgasse: { 
+        geo: [47.941639488966324, 17.071489227126257],
         loops: [
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Bench_B.m4a",
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-D.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_13.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_14.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_16.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_18.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_20.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_21.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_22.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_27.m4a", 1],
+                ],
+                pauses: [[1.1, 1], [2.7, 1], [3.7, 1], [5.3, 1]],
+                offset: 0,
                 volumeBreakpoints: {
-                    inner: 0.05,
-                    outer: 0.09,
-                    maxVolume: -6
+                    inner: 0.02,
+                    outer: 0.03,
+                    maxVolume: -9
                 }
+             
             },
+            {
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/BC_LightRustle_23.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_24.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_25.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_26.m4a", 2],
+                    ["sounds/samples_m4a/BC_Flattern_16.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_61.m4a", 1],
+                ],
+                pauses: [[2.3, 1], [3.1, 1], [4.1, 1]],
+                offset: 3.1,
+                volumeBreakpoints: {
+                    inner: 0.02,
+                    outer: 0.04,
+                    maxVolume: -18
+                }
+            }
         ]
     },
 
     // 5
-    Laube: { 
-        geo: [48.188344547, 16.325108879],
+    UrbarB_01: { 
+        geo: [47.941679607779236, 17.070491078343753],
         loops: [
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Krabbel01.m4a",
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-D.m4a", 2],
+                    ["sounds/samples_m4a/MiraStepA_16.m4a", 2],
+                    ["sounds/samples_m4a/MiraStepA_18.m4a", 2],
+                    ["sounds/samples_m4a/MiraStepA_20.m4a", 2],
+                    ["sounds/samples_m4a/MiraStepA_21.m4a", 2],
+                ],
+                pauses: [[1, 1], [2, 1], [1, 1]],
+                offset: 0,
                 volumeBreakpoints: {
-                    inner: 0.015,
-                    outer: 0.025,
-                    maxVolume: -6
+                    inner: 0.04,
+                    outer: 0.06,
+                    maxVolume: -9
                 }
-            },
+                
+            },       
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Krabbel02.m4a",
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-AH.m4a", 2],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-AHe.m4a", 2],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-GA.m4a", 2],
+                ],
+                pauses: [[2, 1], [3, 1], [4, 1]],
+                offset: 2.3,
                 volumeBreakpoints: {
-                    inner: 0.015,
-                    outer: 0.025,
-                    maxVolume: -6
+                    inner: 0.02,
+                    outer: 0.03,
+                    maxVolume: -18
                 }
-            },
+            },       
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Krabbel03.m4a",
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Drone-H.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_26.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_27.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_28.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_25.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_26.m4a", 2],
+                ],
+                pauses: [[1, 1], [2, 1], [1, 1]],
+                offset: 5.1,
                 volumeBreakpoints: {
-                    inner: 0.015,
-                    outer: 0.025,
-                    maxVolume: -6
+                    inner: 0.04,
+                    outer: 0.07,
+                    maxVolume: -32
                 }
-            },
+                
+            }         
         ]
     },
 
     // 6
-    Reichsapfelgasse: { 
-        // geo: [48.187939420, 16.324981183],
-        geo: [48.187810526271065, 16.325006536225644],
+    Windgasse_01: { 
+        geo: [47.941793277580025, 17.069557809232116],
         loops: [
+            
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/CreakSeq_01.m4a",
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-D.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_16.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_18.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_27.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_28.m4a", 1],
+                ],
+                pauses: [[1, 1], [4, 1], [5.5, 1]],
+                offset: 0.1,
                 volumeBreakpoints: {
-                    inner: 0.035,
-                    outer: 0.06,
-                    maxVolume: -6
-                }
-            },
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/CreakSeq_02.m4a",
-                volumeBreakpoints: {
-                    inner: 0.035,
-                    outer: 0.06,
-                    maxVolume: -6
+                    inner: 0.02,
+                    outer: 0.04,
+                    maxVolume: -9
                 }
             },
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Creak_A.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Creak_B.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Creak_C.m4a", 0.5],
-                    ["sounds/Beta_m4a/samples/Creak_D.m4a", 0.3],
+                    ["sounds/samples_m4a/BC_LightRustle_14.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_15.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_16.m4a", 2],
+                    ["sounds/samples_m4a/BC_LightRustle_17.m4a", 2],
+                    ["sounds/samples_m4a/BC_Flattern_27.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_51.m4a", 1],
                 ],
-                pauses: [[7, 1], [11, 1], [13, 1], [19, 1]],
-                offset: 10,
+                pauses: [[2, 1], [3, 1], [5, 1]],
+                offset: 4,
                 volumeBreakpoints: {
-                    inner: 0.035,
-                    outer: 0.06,
-                    maxVolume: -6
+                    inner: 0.01,
+                    outer: 0.02,
+                    maxVolume: -12
                 }
-            }           
-    ]
+            }
+                    
+        ]   
     },
 
     // 7
-    Durchgang: { 
-        geo: [48.187318467, 16.324726007],
+    Windgasse_02: { 
+        geo: [47.94114134442769, 17.069393114612676],
         loops: [
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/BaWummer02.m4a",
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Organ-1.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Organ-2.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_01.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_09.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_27.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_51.m4a", 1],
+                ],
+                pauses: [[1, 1], [2.5, 1], [4, 1]],
+                offset: 0.1,
+                volumeBreakpoints: {
+                    inner: 0.02,
+                    outer: 0.045,
+                    maxVolume: -18
+                }
+            },
+            {
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-D.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-EsD.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-EsD-2.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_46.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_47.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_05.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_33.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_07.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_10.m4a", 1],
+                ],
+                pauses: [[1, 1], [2, 1], [4, 1]],
+                offset: 6.3,
                 volumeBreakpoints: {
                     inner: 0.03,
-                    outer: 0.15,
-                    maxVolume: -1
-                }
-            },
-            {
-                type: "sample",
-                files: [
-                    ["sounds/Beta_m4a/samples/CoilDim_01_A.m4a", 1],
-                    ["sounds/Beta_m4a/samples/CoilDim_01_B.m4a", 1],
-                    ["sounds/Beta_m4a/samples/CoilDim_01_C.m4a", 1],
-                    ["sounds/Beta_m4a/samples/CoilDim_01_D.m4a", 1],
-                    ["sounds/Beta_m4a/samples/CoilDim_01_E.m4a", 1],
-                    ["sounds/Beta_m4a/samples/CoilDim_01_F.m4a", 1],
-                ],
-                pauses: [[2, 1], [1.5, 1], [4, 1]],
-                offset: 2,
-                volumeBreakpoints: {
-                    inner: 0.025,
-                    outer: 0.075,
-                    maxVolume: -6
-                }
-            },
-            {
-                type: "sample",
-                files: [
-                    ["sounds/Beta_m4a/samples/Pad_C.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Pad_D.m4a", 1],
-                ],
-                pauses: [[11, 1], [13.2, 1], [17.3, 1]],
-                offset: 2,
-                volumeBreakpoints: {
-                    inner: 0.020,
-                    outer: 0.05,
-                    maxVolume: -6
-                }
-            },
-            {
-                type: "sample",
-                files: [
-                    ["sounds/Beta_m4a/samples/CoilDimB_01.m4a", 1],
-                    ["sounds/Beta_m4a/samples/CoilDimB_02.m4a", 1],
-                    ["sounds/Beta_m4a/samples/CoilDimB_03.m4a", 1],
-                ],
-                pauses: [[5, 1], [7, 1], [9, 1]],
-                offset: 4,
-                volumeBreakpoints: {
-                    inner: 0.015,
                     outer: 0.045,
                     maxVolume: -9
                 }
@@ -296,380 +357,612 @@ const geoLoops = {
     },
 
     // 8
-    Dystopistan: { 
-        // geo: [48.187964939, 16.322493216],
-        geo: [48.18793811885562, 16.322493051006234],
+    Windgasse_03: { 
+        geo: [47.94065656830616, 17.069368160893113],
         loops: [
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Gulmarsdrone_A_xf-Norm_01.m4a",
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/EP_Rascheln_01.m4a", 3],
+                    ["sounds/samples_m4a/EP_Rascheln_02.m4a", 3],
+                    ["sounds/samples_m4a/BC_Brizzl_23.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_24.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_25.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_26.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_27.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_28.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_29.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_30.m4a", 1],
+                ],
+                pauses: [[0.1, 1], [0.27, 1], [0.5, 1], [2.1, 1]],
+                offset: 2,
                 volumeBreakpoints: {
-                    inner: 0.06,
-                    outer: 0.19,
-                    maxVolume: -12
+                    inner: 0.02,
+                    outer: 0.04,
+                    maxVolume: -9
                 }
             },
+           
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Z-Gulmars-HiA.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Gulmars-HiB.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Gulmars-HiC.m4a", 1],
+                    ["sounds/samples_m4a/BC_Bird_17.m4a", 1],
+                    ["sounds/samples_m4a/BC_Bird_18.m4a", 1],
+                    ["sounds/samples_m4a/BC_Bird_20.m4a", 1],
+                    ["sounds/samples_m4a/BC_Bird_21.m4a", 1],
+                    ["sounds/samples_m4a/BC_Bird_23.m4a", 1],
+                    ["sounds/samples_m4a/BC_Bird_24.m4a", 1],
+                    ["sounds/samples_m4a/BC_Bird_25.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_01.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_09.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_40.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_41.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_42.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_43.m4a", 1],
                 ],
-                pauses: [[0, 1]],
-                offset: 0,
+                pauses: [[1.7, 1], [2.1, 1], [3.1, 1]],
+                offset: 4,
                 volumeBreakpoints: {
-                    inner: 0.045,
-                    outer: 0.13,
-                    maxVolume: -18
+                    inner: 0.018,
+                    outer: 0.03,
+                    maxVolume: -9
                 }
             },
-            {
-                type: "sample",
-                files: [
-                    ["sounds/Beta_m4a/samples/Z-Gulmars-LowA.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Gulmars-LowB.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Gulmars-LowC.m4a", 1],
-                ],
-                pauses: [[0, 1]],
-                offset: 1,
-                volumeBreakpoints: {
-                    inner: 0.045,
-                    outer: 0.13,
-                    maxVolume: -18
-                }
-            },            
+                        
         ]
     },
 
+    /////////// Hauptstrasse /////////// 
+
     // 9
-    Backstein: { 
-        // geo: [48.189385462, 16.322406379],
-        geo: [48.18924984616822, 16.32275214238429],
+    HauptA_01: { 
+        geo: [47.940453341861186, 17.069810084284075],
         loops: [
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Hold_A_f.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Hold_C_f.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Road-Drone1.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Road-Drone2.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_12.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_13.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_14.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_15.m4a", 2],
                 ],
-                pauses: [[1, 1], [3, 1], [5, 1]],
-                offset: 1,
+                pauses: [[1, 1], [2, 1], [2.5, 1]],
+                offset: 4,
                 volumeBreakpoints: {
-                    inner: 0.08,
-                    outer: 0.12,
-                    maxVolume: -6
+                    inner: 0.02,
+                    outer: 0.04,
+                    maxVolume: -15
                 }
-            },
+            },     
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Hold_B_f.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Hold_D_f.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Organ-2.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_16.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_17.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_18.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_19.m4a", 2],
                 ],
-                pauses: [[1, 1], [3, 1], [5, 1]],
-                offset: 7,
+                pauses: [[1.3, 1], [2.2, 1], [2.7, 1]],
+                offset: 2,
                 volumeBreakpoints: {
-                    inner: 0.07,
-                    outer: 0.12,
-                    maxVolume: -6
+                    inner: 0.03,
+                    outer: 0.04,
+                    maxVolume: -18
                 }
-            }                            
+            },  
         ]
     },
 
     // 10
-    Schnitzlerhaus: { 
-        geo: [48.189998126, 16.323445244],
+    HauptA_02: { 
+        geo: [47.940110681369305, 17.070764895895095],
         loops: [
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Z-Schnitzlerhaus-BassA.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Schnitzlerhaus-BassB.m4a", 1],
+                  ["sounds/samples_m4a/Brzl_Dark_01.m4a", 2],
+                  ["sounds/samples_m4a/Brzl_Dark_02.m4a", 2],
+                  ["sounds/samples_m4a/Brzl_Dark_03.m4a", 2],
+                  ["sounds/samples_m4a/Brzl_Dark_04.m4a", 2],
                 ],
-                pauses: [[0.00, 1], [3.75, 1]],
-                offset: 0,
+                pauses: [[1.1, 1], [2.3, 1], [2.9, 1]],
+                offset: 0.1,
                 volumeBreakpoints: {
-                    inner: 0.05,
-                    outer: 0.12,
-                    maxVolume: -20
+                    inner: 0.04,
+                    outer: 0.06,
+                    maxVolume: -18
                 }
-            },
+            },  
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Z-Schnitzlerhaus-BlingA.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Schnitzlerhaus-BlingB.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Schnitzlerhaus-BlingC.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Organ-2.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_16.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_17.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_18.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_19.m4a", 2],
                 ],
-                pauses: [[0.00, 1], [3.75, 1]],
-                offset: 3.75,
+                pauses: [[1, 1], [2.5, 1], [2.7, 1]],
+                offset: 3.7,
                 volumeBreakpoints: {
-                    inner: 0.05,
-                    outer: 0.12,
-                    maxVolume: -32
+                    inner: 0.04,
+                    outer: 0.06,
+                    maxVolume: -12
                 }
-            },
+            },  
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Z-Schnitzlerhaus-BlingFillA.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Schnitzlerhaus-BlingFillB.m4a", 1],
+                    ["sounds/samples_m4a/EP_Thunder_01.m4a", 1],
+                    ["sounds/samples_m4a/EP_Thunder_04.m4a", 1],
+                    ["sounds/samples_m4a/EP_Thunder_05.m4a", 1],
+                    ["sounds/samples_m4a/EP_Thunder_03.m4a", 1],
+                    ["sounds/samples_m4a/EP_Thunder_06.m4a", 1],
                 ],
-                pauses: [[0.00, 1], [3.75, 1]],
-                offset: 7.5,
+                pauses: [[37, 1], [43, 1], [51, 1]],
+                offset: 7.7,
                 volumeBreakpoints: {
-                    inner: 0.08,
-                    outer: 0.12,
-                    maxVolume: -32
+                    inner: 0.02,
+                    outer: 0.075,
+                    maxVolume: -12
                 }
-            },
+            },  
+        
 
         ]
     },
 
-    //11
-    Marihilf1: { 
-        geo: [48.190916754, 16.322373472],
+    // 11
+    HauptA_03: { 
+        geo: [47.93975659647499, 17.071509421615595],
         loops: [
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/BassL_Noid_A.m4a",
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Road-Drone1.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Road-Drone2.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Road-Drone3.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_10.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_11.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_12.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_13.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_14.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_15.m4a", 2],
+                ],
+                pauses: [[2.75, 1], [3.2, 1], [6.2, 1]],
+                offset: 0.5,
                 volumeBreakpoints: {
-                    inner: 0.07,
-                    outer: 0.1,
+                    inner: 0.04,
+                    outer: 0.06,
                     maxVolume: -12
                 }
-            },
+            },     
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/IMFreez5_A.m4a",
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-GA-3.m4a", 2],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-GA.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_16.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_17.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_18.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_19.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_20.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_21.m4a", 2],
+                ],
+                pauses: [[1, 1], [2.7, 1], [3.3, 1]],
+                offset: 4,
                 volumeBreakpoints: {
-                    inner: 0.03,
-                    outer: 0.20,
-                    maxVolume: -20
+                    inner: 0.02,
+                    outer: 0.04,
+                    maxVolume: -18
                 }
             },
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Gulmar_Q1_02.m4a",
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/GR_BL_A_10.m4a", 1],
+                    ["sounds/samples_m4a/GR_BL_A_11.m4a", 1],
+                ],
+                pauses: [[37, 1], [43, 1], [51, 1]],
+                offset: 7.7,
                 volumeBreakpoints: {
-                    inner: 0.07,
-                    outer: 0.17,
-                    maxVolume: -22
+                    inner: 0.02,
+                    outer: 0.05,
+                    maxVolume: -12
                 }
-            },                                      
+            },  
+                
         ]
     },
 
     // 12
-    Bahnstrasse1: { 
-        // geo: [48.191683725, 16.322761450],
-        geo: [48.19193157443808, 16.323450997624956],
+    HauptA_04: { 
+        geo: [47.93922356086512, 17.072765453611147],
         loops: [
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/EizoHold09_A.m4a",
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Brzl_Dark_01.m4a", 2],
+                    ["sounds/samples_m4a/Brzl_Dark_02.m4a", 2],
+                    ["sounds/samples_m4a/Brzl_Dark_03.m4a", 2],
+                    ["sounds/samples_m4a/Brzl_Dark_04.m4a", 2],
+                    ["sounds/samples_m4a/Brzl_Dark_05.m4a", 2],
+                    ["sounds/samples_m4a/Brzl_Dark_06.m4a", 2],
+                ],
+                pauses: [[1, 1], [2.2, 1], [3.2, 1]],
+                offset: 4,
                 volumeBreakpoints: {
-                    inner: 0.12,
-                    outer: 0.14,
-                    maxVolume: -6
+                    inner: 0.03,
+                    outer: 0.085,
+                    maxVolume: -12
                 }
-            },
+            },  
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Z-Bahnstrasse1-LowA.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Bahnstrasse1-LowB.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Bahnstrasse1-LowC.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Organ-2.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_16.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_17.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_18.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_19.m4a", 2],
                 ],
-                pauses: [[0, 1], [7.5, 1], [15.0, 1]],
-                offset: 0,
+                pauses: [[2.1, 1], [2.5, 1], [3.7, 1]],
+                offset: 2,
                 volumeBreakpoints: {
-                    inner: 0.06,
-                    outer: 0.12,
-                    maxVolume: -24
+                    inner: 0.03,
+                    outer: 0.06,
+                    maxVolume: -18
                 }
-            },
+            }, 
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Z-Bahnstrasse1+2-HiA.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Bahnstrasse1+2-HiB.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Bahnstrasse1+2-HiC.m4a", 1],
+                    ["sounds/samples_m4a/GR_BL_A_12.m4a", 1],
+                    ["sounds/samples_m4a/GR_BL_A_11.m4a", 1],
+                    ["sounds/samples_m4a/GR_ID_A_09.m4a", 1],
                 ],
-                pauses: [[0, 1], [11.25, 1]],
-                offset: 0,
+                pauses: [[37, 1], [43, 1], [51, 1]],
+                offset: 7.7,
                 volumeBreakpoints: {
-                    inner: 0.08,
-                    outer: 0.12,
-                    maxVolume: -30
+                    inner: 0.04,
+                    outer: 0.09,
+                    maxVolume: -12
+                }
+            },  
+        ]
+    },
+
+    // 13
+    HauptA_05: { 
+        geo: [47.93880364522935, 17.074168362772006],
+        loops: [
+            {
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Road-Drone1.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Road-Drone2.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Road-Drone3.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Organ-2.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_10.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_11.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_12.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_13.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_14.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_15.m4a", 2],
+                ],
+                pauses: [[1, 1], [2.2, 1], [3.7, 1]],
+                offset: 4,
+                volumeBreakpoints: {
+                    inner: 0.04,
+                    outer: 0.06,
+                    maxVolume: -15
+                }
+            },     
+            {
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-Da.m4a", 2],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-GA.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_16.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_17.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_18.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_19.m4a", 2],
+                ],
+                pauses: [[1.5, 1], [2.3, 1], [3.9, 1]],
+                offset: 4,
+                volumeBreakpoints: {
+                    inner: 0.02,
+                    outer: 0.04,
+                    maxVolume: -18
                 }
             }, 
         ]
     },
 
-    // 13
-    Bahnstrasse2: { 
-        geo: [48.192481660, 16.325454606],
-        loops: [
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/EizoHold09_B.m4a",
-                volumeBreakpoints: {
-                    inner: 0.1,
-                    outer: 0.14,
-                    maxVolume: -6
-                }
-            },
-            {
-                type: "sample",
-                files: [
-                    ["sounds/Beta_m4a/samples/Z-Bahnstrasse2-LowA.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Bahnstrasse2-LowB.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Bahnstrasse2-LowC.m4a", 1],
-                ],
-                pauses: [[0, 1], [7.5, 1], [15.0, 1]],
-                offset: 0,
-                volumeBreakpoints: {
-                    inner: 0.4,
-                    outer: 0.14,
-                    maxVolume: -24
-                }
-            },
-            {
-                type: "sample",
-                files: [
-                    ["sounds/Beta_m4a/samples/Z-Bahnstrasse1+2-HiA.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Bahnstrasse1+2-HiB.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Bahnstrasse1+2-HiC.m4a", 1],
-                ],
-                pauses: [[0, 1], [11.25, 1]],
-                offset: 0,
-                volumeBreakpoints: {
-                    inner: 0.10,
-                    outer: 0.14,
-                    maxVolume: -30
-                }
-            }    
-        ]
-    },
-
     // 14
-    RustensteigAufgang: { 
-        geo: [48.193146596, 16.326599696],
+    EckLindengasse: { 
+        geo: [47.93855216368571, 17.074841470959747],
         loops: [
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Boat05_xf-Norm.m4a",
+                type: "sample",
+                files: [
+                  ["sounds/samples_m4a/Z-BW-Rhodisch-Da.m4a", 1],
+                  ["sounds/samples_m4a/Z-BW-Rhodisch-D.m4a", 1],
+                  ["sounds/samples_m4a_extra/Creak_A.m4a", 8],
+                  ["sounds/samples_m4a_extra/Creak_B.m4a", 8],
+                  ["sounds/samples_m4a_extra/Creak_C.m4a", 8],
+                  ["sounds/samples_m4a_extra/Creak_D.m4a", 8],
+                ],
+                pauses: [[1, 1], [2.7, 1], [4.3, 1]],
+                offset: 1,
                 volumeBreakpoints: {
-                    inner: 0.015,
-                    outer: 0.035,
-                    maxVolume: -6
+                    inner: 0.02,
+                    outer: 0.04,
+                    maxVolume: -18
                 }
-            },    
+            },  
+            {
+                type: "sample",
+                files: [
+                  ["sounds/samples_m4a/Brzl_Dark_01.m4a", 1],
+                  ["sounds/samples_m4a/Brzl_Dark_02.m4a", 1],
+                  ["sounds/samples_m4a/Brzl_Dark_03.m4a", 1],
+                  ["sounds/samples_m4a/Brzl_Dark_04.m4a", 1],
+                  ["sounds/samples_m4a/Brzl_Dark_05.m4a", 1],
+                  ["sounds/samples_m4a/Brzl_Dark_06.m4a", 1],
+                  ["sounds/samples_m4a/Brzl_Dark_07.m4a", 1],
+                  ["sounds/samples_m4a/Brzl_Dark_08.m4a", 1],
+                ],
+                pauses: [[1, 1], [2.9, 1], [4.3, 1]],
+                offset: 2.9,
+                volumeBreakpoints: {
+                    inner: 0.03,
+                    outer: 0.04,
+                    maxVolume: -18
+                }
+            },  
+            {
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Organ-2.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_16.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_17.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_18.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_19.m4a", 2],
+                    ["sounds/samples_m4a_extra/CoilDim_01_A.m4a", 2],
+                    ["sounds/samples_m4a_extra/CoilDim_01_B.m4a", 2],
+                    ["sounds/samples_m4a_extra/CoilDim_01_C.m4a", 2],
+                    ["sounds/samples_m4a_extra/CoilDim_01_D.m4a", 2],
+                ],
+                pauses: [[1.2, 1], [2.7, 1], [3.2, 1]],
+                offset: 4,
+                volumeBreakpoints: {
+                    inner: 0.04,
+                    outer: 0.06,
+                    maxVolume: -12
+                }
+            },  
         ]
     },
 
     // 15
-    RustensteigBruecke: { 
-        // geo: [48.194041617, 16.326012745],
-        geo: [48.19384623871864, 16.32613804608917],
+    HauptB_01: { 
+        geo: [47.93797114992436, 17.07618121514111],
         loops: [
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Boat01_xf-Norm.m4a",
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Organ-2.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_12.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_13.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_14.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_15.m4a", 2],
+                ],
+                pauses: [[1.2, 1], [2.5, 1], [4.2, 1]],
+                offset: 2,
                 volumeBreakpoints: {
-                    inner: 0.07,
-                    outer: 0.1,
-                    maxVolume: -6
+                    inner: 0.04,
+                    outer: 0.07,
+                    maxVolume: -15
                 }
-            },            
+            },     
+            {
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-D.m4a", 2],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-EsD.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-EsD-2.m4a", 1],
+                    ["sounds/samples_m4a/EP_Rascheln_01.m4a", 1],
+                    ["sounds/samples_m4a/EP_Rascheln_02.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_16.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_17.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_18.m4a", 2],
+                    ["sounds/samples_m4a/BC_Brizzl_19.m4a", 2],
+                ],
+                pauses: [[1.7, 1], [2.3, 1], [4.7, 1]],
+                offset: 4,
+                volumeBreakpoints: {
+                    inner: 0.02,
+                    outer: 0.03,
+                    maxVolume: -18
+                }
+            },         
         ]
     },
 
     // 16
-    Fadesse: { 
-        geo: [48.195847404, 16.324594073],
+    Zipfel: { 
+        geo: [47.93757224117356, 17.077993429492718],
         loops: [
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/BassWumm_A.m4a", 1],
-                    ["sounds/Beta_m4a/samples/BassWumm_B.m4a", 1],
-                    ["sounds/Beta_m4a/samples/BassWumm_C.m4a", 1],
-                    ["sounds/Beta_m4a/samples/BassWumm_D.m4a", 1],
-                    ["sounds/Beta_m4a/samples/BassWumm_E.m4a", 1],
-                    ["sounds/Beta_m4a/samples/BassWumm_F.m4a", 1],
+                    ["sounds/samples_m4a/BC_Brizzl_12.m4a", 4],
+                    ["sounds/samples_m4a/BC_Brizzl_13.m4a", 4],
+                    ["sounds/samples_m4a/BC_Brizzl_14.m4a", 4],
+                    ["sounds/samples_m4a/BC_Brizzl_15.m4a", 4],
+                    ["sounds/samples_m4a/BC_Brizzl_18.m4a", 4],
+                    ["sounds/samples_m4a/BC_Brizzl_19.m4a", 4],
+                    ["sounds/samples_m4a/BC_Bird_01.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_02.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_11.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_13.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_15.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_26.m4a", 2],
+                    ["sounds/samples_m4a/BC_Flattern_19.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_20.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_21.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_22.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_23.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_24.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_25.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_26.m4a", 1],
                 ],
-                pauses: [[3.1, 1], [4.3, 1], [4.8, 1]],
-                offset: 0,
+                pauses: [[0.2, 1], [0.45, 1], [0.6, 1], [9.2, 1]],
+                offset: 1,
                 volumeBreakpoints: {
-                    inner: 0.13,
-                    outer: 0.17,
-                    maxVolume: -6
+                    inner: 0.04,
+                    outer: 0.06,
+                    maxVolume: -12
                 }
-            },
+            },     
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Pad_A.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Pad_B.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-D.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-EsD.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-EsD-2.m4a", 1],
+                    ["sounds/samples_m4a/EP_Rascheln_01.m4a", 1],
+                    ["sounds/samples_m4a/EP_Rascheln_02.m4a", 1],
+                    ["sounds/samples_m4a/EP_Rascheln_03.m4a", 1],
+                    ["sounds/samples_m4a/EP_Rascheln_04.m4a", 1],
                 ],
-                pauses: [[7.1, 1], [8.6, 1], [11.3, 1]],
-                offset: 2,
+                pauses: [[9.3, 1], [11.3, 1], [13.3, 1]],
+                offset: 4,
                 volumeBreakpoints: {
-                    inner: 0.09,
-                    outer: 0.13,
-                    maxVolume: -6
+                    inner: 0.03,
+                    outer: 0.05,
+                    maxVolume: -21
                 }
-            },
-            {
-                type: "sample",
-                files: [
-                    ["sounds/Beta_m4a/samples/Pad_C.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Pad_D.m4a", 1],
-                ],
-                pauses: [[7.1, 1], [8.6, 1], [11.3, 1]],
-                // pauses: [[11, 1], [13.2, 1], [17.3, 1]],
-                offset: 15,
-                volumeBreakpoints: {
-                    inner: 0.09,
-                    outer: 0.13,
-                    maxVolume: -6
-                }
-            },
+            },         
         ]
     },
 
     // 17
-    Kirchplatz: { 
-        geo: [48.197159505, 16.323842309],
+    UrbarC_01: { 
+        geo: [47.93803714183943, 17.077338319298335],
         loops: [
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Freez-12_A.m4a",
+                type: "sample",
+                files: [
+      
+                    ["sounds/samples_m4a/BC_Bird_01.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_02.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_03.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_04.m4a", 2],
+                    ["sounds/samples_m4a/BC_Flattern_13.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_14.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_15.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_16.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_27.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_53.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_44.m4a", 1],
+                    ["sounds/samples_m4a/BC_Flattern_48.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-GA-2.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-GA-3.m4a", 1],
+                    ["sounds/samples_m4a/Z-HighOnly.m4a", 1],
+                ],
+                pauses: [[1.2, 1], [2.3, 1], [4.7, 1]],
+                offset: 1,
+                volumeBreakpoints: {
+                    inner: 0.04,
+                    outer: 0.06,
+                    maxVolume: -18
+                }
+            },     
+            {
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-D.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-Da.m4a", 2],
+                    ["sounds/samples_m4a/KB_Wood_22.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_23.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_24.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_25.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_26.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_27.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_28.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_29.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_30.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_31.m4a", 1],
+                ],
+                pauses: [[4.7, 1], [5.9, 1], [7.7, 1]],
+                offset: 3.2,
                 volumeBreakpoints: {
                     inner: 0.03,
-                    outer: 0.12,
-                    maxVolume: -15
+                    outer: 0.05,
+                    maxVolume: -18
                 }
-            },                   
+            },                 
         ]
     },
 
     // 18
-    Meisselmarkt: { 
-        // geo: [48.197553784, 16.321630264],
-        geo: [48.19757301026609, 16.32134098406846],
+    UrbarC_02: { 
+        geo: [47.93869574944466, 17.076220690238568],
         loops: [
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/BCN_02.m4a",
+            {    
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-GA.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-GA-2.m4a", 1],
+                    ["sounds/samples_m4a/Z-BW-Rhodisch-GA-3.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_01.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_02.m4a", 1],
+                    ["sounds/samples_m4a/BC_LightRustle_03.m4a", 1],
+                    ["sounds/samples_m4a/BC_Bird_05.m4a", 1],
+                    ["sounds/samples_m4a/BC_Bird_06.m4a", 1],
+                    ["sounds/samples_m4a/BC_Bird_07.m4a", 1],
+                    ["sounds/samples_m4a/BC_Bird_08.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_11.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_12.m4a", 1],
+                ],
+                pauses: [[2.2, 1], [3.7, 1]],
+                offset: 0.1,
                 volumeBreakpoints: {
-                    inner: 0.08,
-                    outer: 0.22,
+                    inner: 0.02,
+                    outer: 0.04,
+                    maxVolume: -18
+                }
+            },
+              {
+                type: "sample",
+                files: [
+                    ["sounds/samples_m4a/Z-Wood-Loop-A.m4a", 2],
+                    ["sounds/samples_m4a/Z-Wood-Loop-B.m4a", 2],
+                    ["sounds/samples_m4a/Z-Wood-Loop-C.m4a", 2],
+                    ["sounds/samples_m4a/KB_Wood_01.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_02.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_03.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_04.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_05.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_06.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_07.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_08.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_09.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_10.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_11.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_12.m4a", 1],
+                ],
+                
+                pauses: [[2.5, 1], [3.75, 1], [4.3, 1]],
+                offset: 3.75,
+                volumeBreakpoints: {
+                    inner: 0.02,
+                    outer: 0.06,
                     maxVolume: -12
                 }
             },
@@ -677,394 +970,63 @@ const geoLoops = {
     },
 
     // 19
-    Parkwelt1: { 
-        // geo: [48.196862418, 16.319609904],
-        geo: [48.19656835586727, 16.319555704224747],
+    UrbarC_03: { 
+        geo: [47.93960392090753, 17.074761563410544],
         loops: [
             {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Bench_Ceq.m4a",
-                volumeBreakpoints: {
-                    inner: 0.09,
-                    outer: 0.14,
-                    maxVolume: -6
-                }
-            },
-            {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Z-Parkwelt1-LowA.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Parkwelt1-LowB.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Parkwelt1-LowC.m4a", 1],
+                    ["sounds/samples_m4a/BC_Bird_46.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_45.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_44.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_43.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_42.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_41.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_40.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_39.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_38.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_37.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_36.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_35.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_34.m4a", 2],
+                    ["sounds/samples_m4a/BC_Bird_33.m4a", 2],
+                    ["sounds/samples_m4a/BC_Flattern_40.m4a", 2],
+                    ["sounds/samples_m4a/BC_Flattern_41.m4a", 2],
                 ],
-                pauses: [[0.00, 1], [3.75, 1]],
-                offset: 0,
-                volumeBreakpoints: {
-                    inner: 0.09,
-                    outer: 0.12,
-                    maxVolume: -28
-                }
-            },
-            {
-                type: "sample",
-                files: [
-                    ["sounds/Beta_m4a/samples/Z-Parkwelt1-HiA.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Parkwelt1-HiB.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Parkwelt1-HiC.m4a", 1],
-                ],
-                pauses: [[0.00, 1], [3.75, 1], [7.5, 1]],
-                offset: 3.75,
-                volumeBreakpoints: {
-                    inner: 0.04,
-                    outer: 0.11,
-                    maxVolume: -34
-                }
-            },
-        ]
-    },
-
-    // 19-20
-    ZwischenPark: { 
-        geo: [48.19546736482175, 16.319352671751705],
-        loops: [
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/ZwischenPark_A_s.m4a",
-                volumeBreakpoints: {
-                    inner: 0.07,
-                    outer: 0.08,
-                    maxVolume: -12
-                }
-            },
-            {
-                type: "sample",
-                files: [
-                    ["sounds/Beta_m4a/samples/Z-Parkwelt-FillA.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Parkwelt-FillB.m4a", 1],
-                ],
-                pauses: [[0.00, 1], [3.75, 1]],
-                offset: 0,
+                pauses: [[5.1, 1], [6.7, 1], [1.2, 1]],
+                offset: 0.1,
                 volumeBreakpoints: {
                     inner: 0.06,
-                    outer: 0.12,
-                    maxVolume: -28
+                    outer: 0.08,
+                    maxVolume: -15
                 }
-            },
-        ]
-    },    
-
-    // 20
-    Parkwelt2: { 
-        // geo: [48.194351263, 16.319203987],
-        geo: [48.194016928463405, 16.31944958902668],
-        loops: [
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Bench_Deq.m4a",
-                volumeBreakpoints: {
-                    inner: 0.07,
-                    outer: 0.18,
-                    maxVolume: -6
-                }
-            },
+            },     
             {
                 type: "sample",
                 files: [
-                    ["sounds/Beta_m4a/samples/Z-Parkwelt2-LowA.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Parkwelt2-LowB.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Parkwelt2-LowC.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_27.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_31.m4a", 1],
+                    ["sounds/samples_m4a/KB_Wood_32.m4a", 1],
+                    ["sounds/samples_m4a/GR_ID_A_01.m4a", 1],
+                    ["sounds/samples_m4a/GR_ID_A_02.m4a", 1],
+                    ["sounds/samples_m4a/GR_ID_A_03.m4a", 1],
+                    ["sounds/samples_m4a/GR_ID_A_04.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_24.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_25.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_26.m4a", 1],
+                    ["sounds/samples_m4a/MiraStepA_27.m4a", 1],
+                    
                 ],
-                pauses: [[0.00, 1], [4.21875, 1]],
-                offset: 0,
+                pauses: [[7.1, 1], [8, 1], [11.3, 1]],
+                offset: 7.1,
                 volumeBreakpoints: {
-                    inner: 0.12,
-                    outer: 0.18,
-                    maxVolume: -28
-                }
-            },
-            {
-                type: "sample",
-                files: [
-                    ["sounds/Beta_m4a/samples/Z-Parkwelt2-HiA.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Parkwelt2-HiB.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Z-Parkwelt2-HiC.m4a", 1],
-                ],
-                pauses: [[0.00, 1], [4.21875, 1]],
-                offset: 4.21875,
-                volumeBreakpoints: {
-                    inner: 0.08,
-                    outer: 0.16,
-                    maxVolume: -28
-                }
-            },
-        ]
-    },
-
-    // 20-21 
-    ZwischenKnoten: { 
-        geo: [48.19294590736031, 16.318869239925817],
-        loops: [
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Okinawa_A_s.m4a",
-                volumeBreakpoints: {
-                    inner: 0.04,
+                    inner: 0.06,
                     outer: 0.12,
                     maxVolume: -18
                 }
-            },
+            },                 
         ]
     },
-
-
-    // 21
-    Verkehrsknoten: { 
-        geo: [48.192440057, 16.316386950],
-        loops: [
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/GulmarQ1_03eq.m4a",
-                volumeBreakpoints: {
-                    inner: 0.08,
-                    outer: 0.32,
-                    maxVolume: -6
-                }
-            },
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/DroneInMyRoom_A.m4a",
-                volumeBreakpoints: {
-                    inner: 0.08,
-                    outer: 0.32,
-                    maxVolume: -6
-                }
-            },              
-        ]
-    },
-
-    // 22
-    Technischesmuseum: { 
-        geo: [48.191402109, 16.318285817],
-        loops: [
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/GlitchyMagnetism.m4a",
-                volumeBreakpoints: {
-                    inner: 0.06,
-                    outer: 0.09,
-                    maxVolume: -12
-                }
-            },
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/SchuhR_L.m4a",
-                volumeBreakpoints: {
-                    inner: 0.06,
-                    outer: 0.12,
-                    maxVolume: -12
-                }
-            },
-            {
-                type: "sample",
-                files: [
-                    ["sounds/Beta_m4a/samples/N_Pizzi_01.m4a", 1],
-                    ["sounds/Beta_m4a/samples/N_Pizzi_02.m4a", 1],
-                    ["sounds/Beta_m4a/samples/N_Pizzi_03.m4a", 1],
-                    ["sounds/Beta_m4a/samples/N_Pizzi_04.m4a", 1],
-                    ["sounds/Beta_m4a/samples/N_Pizzi_05.m4a", 1],
-                    ["sounds/Beta_m4a/samples/N_Pizzi_06.m4a", 1],
-                    ["sounds/Beta_m4a/samples/N_Pizzi_07.m4a", 1],
-                    ["sounds/Beta_m4a/samples/N_Pizzi_08.m4a", 1],
-                    ["sounds/Beta_m4a/samples/N_Pizzi_09.m4a", 1],
-                ],
-                pauses: [[2.3, 1], [1.7, 1], [3.2, 1]],
-                offset: 3,
-                volumeBreakpoints: {
-                    outer: 0.07,
-                    outer: 0.07,
-                    maxVolume: -6
-                }
-            }
-        ]
-    },
-
-    // 23
-    ParkJaeger: { 
-        geo: [48.190591090, 16.319748125],
-        loops: [
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/WindCic_A.m4a",
-                volumeBreakpoints: {
-                    inner: 0.015,
-                    outer: 0.17,
-                    maxVolume: -12
-                }
-            },              
-        ]
-    },
-
-    // 24
-    Mariahilf2: { 
-        geo: [48.190165611, 16.320622150],
-        loops: [
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/Freez-540_A.m4a",
-                volumeBreakpoints: {
-                    inner: 0.04,
-                    outer: 0.1,
-                    maxVolume: -6
-                }
-            },
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/GrainyL_A.m4a",
-                volumeBreakpoints: {
-                    inner: 0.04,
-                    outer: 0.1,
-                    maxVolume: -12
-                }
-            },
-            {
-                type: "sample",
-                files: [
-                    ["sounds/Beta_m4a/samples/GranPad_A.m4a", 1],
-                    ["sounds/Beta_m4a/samples/GranPad_B.m4a", 1],
-                    ["sounds/Beta_m4a/samples/GranPad_C.m4a", 1],
-                ],
-                pauses: [[5.3, 1], [7.1, 1], [11, 1]],
-                offset: 3,
-                volumeBreakpoints: {
-                    outer: 0.04,
-                    outer: 0.1,
-                    maxVolume: -6
-                }
-            },                      
-        ]
-    },
-
-    // 25
-    ParkWelsbach: { 
-        // geo: [48.188591830, 16.317684068], 
-        geo: [48.189197406498565, 16.318514216695913], 
-        loops: [
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/AnimalsOfNight_03_A.m4a",
-                volumeBreakpoints: {
-                    inner: 0.13,
-                    outer: 0.25,
-                    maxVolume: -6
-                }
-            },            
-        ]
-    },
-
-
-
-    //***** EXTRA */
-
-    // 25A
-    Siebeneichen: { 
-        geo: [48.18867466190223, 16.32146731378976],
-        loops: [
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/CreakSeq_01_B.m4a",
-                volumeBreakpoints: {
-                    inner: 0.035,
-                    outer: 0.1,
-                    maxVolume: -6
-                }
-            },
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/CreakSeq_02_B.m4a",
-                volumeBreakpoints: {
-                    inner: 0.035,
-                    outer: 0.1,
-                    maxVolume: -6
-                }
-            },
-            {
-                type: "sample",
-                files: [
-                    ["sounds/Beta_m4a/samples/Creak_A.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Creak_B.m4a", 1],
-                    ["sounds/Beta_m4a/samples/Creak_C.m4a", 0.5],
-                    ["sounds/Beta_m4a/samples/Creak_D.m4a", 0.3],
-                ],
-                pauses: [[7, 1], [11, 1], [13, 1], [19, 1]],
-                offset: 10,
-                volumeBreakpoints: {
-                    inner: 0.035,
-                    outer: 0.1,
-                    maxVolume: -6
-                }
-            }     
-        ]
-    },
-
-    //***** PUNKTE */
-    
-    // 1
-    Rustenstegdurchgang: { 
-        geo: [48.192898985, 16.326779666],
-        loops: [
-        ]
-    },
-
-    // 2
-    Monolith: { 
-        geo: [48.197257626, 16.324030425],
-        loops: [
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/PurrL.m4a",
-                volumeBreakpoints: {
-                    inner: 0.009,
-                    outer: 0.015,
-                    maxVolume: -24
-                }
-            },
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/PurrR.m4a",
-                volumeBreakpoints: {
-                    inner: 0.009,
-                    outer: 0.015,
-                    maxVolume: -24
-                }
-            },
-        ]
-    },
-
-    // 3
-    UbahnJohnstrasse: { 
-        geo: [48.197540832, 16.321658144],
-        loops: [
-        ]
-    },
-
-    // 4
-    WasserhausSchmelz: { 
-        geo: [48.197811246, 16.319785187],
-        loops: [
-            {
-                type: "seamless",
-                file: "sounds/Beta_m4a/seamless/WaterWavy01.m4a",
-                volumeBreakpoints: {
-                    inner: 0.03,
-                    outer: 0.035,
-                    maxVolume: -6
-                }
-            },
-        ]
-    }    
-
-    
-
 
     
 }

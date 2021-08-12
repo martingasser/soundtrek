@@ -1,24 +1,14 @@
 import {geoLoops} from './config.js'
 import {route} from './routeConfig.js'
 
-/////////////////////////////////// Global Constants /////////////////////////////////// 
-
-////////////////////////// Locations
-
-const yppenLat = 48.21386851242243;
-const yppenLon = 16.3357821121604;
-
-const huberLat = 48.21376415110615;
-const huberLon = 16.333409465125346;
-
-
 
 /////////////////////////////////// Global Variables /////////////////////////////////// 
 
 let mymap;
 
-let mylat = 48.2143106; // MY Latitude default values
-let mylon = 16.3322386; // MY Longitude default values
+let mylat = 47.940556679691184; // MY Latitude default values Stodlschenke
+let mylon = 17.07346780976932; // MY Latitude default values Stodlschenke
+
 
 let onUpdate;
 
@@ -61,20 +51,21 @@ tiles.addTo(mymap);
 ////////////////////////// LEAFLET: custom icons
 
 const meIcon = L.icon({
-    iconUrl: 'me_marker.png',
+    iconUrl: 'images/me_marker.png',
     iconSize: [26, 26], // size of the icon
     iconAnchor: [13, 13], // point of the icon which will correspond to marker's location
 });
 
 const locIcon = L.icon({
-    iconUrl: 'location_marker.png',
+    iconUrl: 'images/location_marker.png',
     iconSize: [30, 40], // size of the icon
     iconAnchor: [15, 40], // point of the icon which will correspond to marker's location
 });
 
 ////////////////////////// LEAFLET: Fixed Locations
 
-////////// Development Marker
+//////// Development Marker
+
 // for (let loc in geoLoops) {
 //     const geo = geoLoops[loc].geo
 //     L.marker(geo, { icon: locIcon }).addTo(mymap); // Leaflet – set Marker to 0,0
@@ -91,7 +82,7 @@ for (let loc of route) {
 }
 
 const polyline = new L.Polyline(waypoints, {
-    color: '#5cf2ff',
+    color: '#afff8f',
     weight: 3,
     opacity: 0.5,
     smoothFactor: 1,

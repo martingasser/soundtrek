@@ -36,9 +36,9 @@ function updateLocation (lat, lon) {
         const dist = getDistanceFromLatLonInKm(lat, lon, loc.geo[0], loc.geo[1])
         loc.setDistance(dist)
 
-        if (dist < 0.2) {
-            console.log(loc.name, dist)
-        }
+        // if (dist < 0.2) {
+        //     console.log(loc.name, dist)
+        // }
 
     }
 }
@@ -51,8 +51,8 @@ function success(position) {
     const lat = position.coords.latitude
     const lon = position.coords.longitude
     // Zeilen einkommentieren für GPS Updates
-    gotoMapLocation(lat, lon)
-    updateLocation(lat, lon)
+    // gotoMapLocation(lat, lon)
+    // updateLocation(lat, lon)
 }
   
 function error() {
@@ -61,8 +61,6 @@ function error() {
 
 const options = {
     enableHighAccuracy: true,
-    /*   maximumAge: 30000,
-    timeout: 27000 */
     maximumAge: 5000,
     timeout: 4700
 };
