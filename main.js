@@ -51,8 +51,8 @@ function success(position) {
     const lat = position.coords.latitude
     const lon = position.coords.longitude
     // Zeilen einkommentieren für GPS Updates
-    // gotoMapLocation(lat, lon)
-    // updateLocation(lat, lon)
+    gotoMapLocation(lat, lon)
+    updateLocation(lat, lon)
 }
   
 function error() {
