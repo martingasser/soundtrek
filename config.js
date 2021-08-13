@@ -33,7 +33,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.025,
                     outer: 0.06,
-                    maxVolume: -6
+                    maxVolume: 0
                 } 
             },    
             {
@@ -55,7 +55,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.01,
                     outer: 0.02,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             },
         ]
@@ -84,7 +84,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.04,
-                    maxVolume: -9
+                    maxVolume: -3
                 }
                 
             },   
@@ -105,7 +105,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.01,
                     outer: 0.02,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             }
         ]
@@ -133,7 +133,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.03,
-                    maxVolume: -15
+                    maxVolume: -9
                 }
                 
             },       
@@ -154,7 +154,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.01,
                     outer: 0.02,
-                    maxVolume: -15
+                    maxVolume: -9
                 }
             }
         ]
@@ -182,7 +182,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.03,
-                    maxVolume: -9
+                    maxVolume: -3
                 }
              
             },
@@ -201,7 +201,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.04,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             }
         ]
@@ -225,7 +225,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.04,
                     outer: 0.06,
-                    maxVolume: -9
+                    maxVolume: -3
                 }
                 
             },       
@@ -241,7 +241,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.03,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             },       
             {
@@ -259,7 +259,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.04,
                     outer: 0.07,
-                    maxVolume: -32
+                    maxVolume: -24
                 }
                 
             }         
@@ -285,7 +285,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.04,
-                    maxVolume: -9
+                    maxVolume: -3
                 }
             },
             {
@@ -303,7 +303,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.01,
                     outer: 0.02,
-                    maxVolume: -12
+                    maxVolume: -6
                 }
             }
                     
@@ -329,7 +329,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.045,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             },
             {
@@ -350,7 +350,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.03,
                     outer: 0.045,
-                    maxVolume: -9
+                    maxVolume: -3
                 }
             },
         ]
@@ -379,7 +379,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.04,
-                    maxVolume: -9
+                    maxVolume: -3
                 }
             },
            
@@ -405,7 +405,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.018,
                     outer: 0.03,
-                    maxVolume: -9
+                    maxVolume: -3
                 }
             },
                         
@@ -433,7 +433,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.04,
-                    maxVolume: -15
+                    maxVolume: -9
                 }
             },     
             {
@@ -450,7 +450,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.03,
                     outer: 0.04,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             },  
         ]
@@ -473,7 +473,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.04,
                     outer: 0.06,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             },  
             {
@@ -490,7 +490,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.04,
                     outer: 0.06,
-                    maxVolume: -12
+                    maxVolume: -6
                 }
             },  
             {
@@ -507,7 +507,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.075,
-                    maxVolume: -12
+                    maxVolume: -6
                 }
             },  
         
@@ -537,7 +537,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.04,
                     outer: 0.06,
-                    maxVolume: -12
+                    maxVolume: -6
                 }
             },     
             {
@@ -557,7 +557,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.04,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             },
             {
@@ -571,7 +571,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.05,
-                    maxVolume: -12
+                    maxVolume: -6
                 }
             },  
                 
@@ -597,7 +597,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.03,
                     outer: 0.085,
-                    maxVolume: -12
+                    maxVolume: -6
                 }
             },  
             {
@@ -614,7 +614,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.03,
                     outer: 0.06,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             }, 
             {
@@ -629,7 +629,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.04,
                     outer: 0.09,
-                    maxVolume: -12
+                    maxVolume: -6
                 }
             },  
         ]
@@ -658,7 +658,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.04,
                     outer: 0.06,
-                    maxVolume: -15
+                    maxVolume: -9
                 }
             },     
             {
@@ -676,7 +676,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.04,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             }, 
         ]
@@ -701,7 +701,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.04,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             },  
             {
@@ -721,7 +721,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.03,
                     outer: 0.04,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             },  
             {
@@ -742,7 +742,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.04,
                     outer: 0.06,
-                    maxVolume: -12
+                    maxVolume: -6
                 }
             },  
         ]
@@ -766,7 +766,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.04,
                     outer: 0.07,
-                    maxVolume: -15
+                    maxVolume: -9
                 }
             },     
             {
@@ -787,7 +787,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.03,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             },         
         ]
@@ -826,7 +826,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.04,
                     outer: 0.06,
-                    maxVolume: -12
+                    maxVolume: -6
                 }
             },     
             {
@@ -845,7 +845,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.03,
                     outer: 0.05,
-                    maxVolume: -21
+                    maxVolume: -15
                 }
             },         
         ]
@@ -880,7 +880,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.04,
                     outer: 0.06,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             },     
             {
@@ -904,7 +904,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.03,
                     outer: 0.05,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             },                 
         ]
@@ -935,7 +935,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.04,
-                    maxVolume: -18
+                    maxVolume: -12
                 }
             },
               {
@@ -963,7 +963,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.02,
                     outer: 0.06,
-                    maxVolume: -12
+                    maxVolume: -6
                 }
             },
         ]
@@ -998,7 +998,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.06,
                     outer: 0.08,
-                    maxVolume: -15
+                    maxVolume: -9
                 }
             },     
             {
@@ -1022,7 +1022,7 @@ const geoLoops = {
                 volumeBreakpoints: {
                     inner: 0.06,
                     outer: 0.12,
-                    maxVolume: -18
+                    maxVolume: -9
                 }
             },                 
         ]
